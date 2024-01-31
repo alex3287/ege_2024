@@ -5,7 +5,7 @@ color('green')
 shape('turtle')
 speed(30)
 screensize(2048, 1980)
-k=20
+k=1
 tracer(0)
 left(90)
 
@@ -34,7 +34,7 @@ for x in range(11, 44):
         dot(5, 'red')
         count += 1
 
-print(count)
+print(count, 28*24)
 # 672
 # -374
 # 891
