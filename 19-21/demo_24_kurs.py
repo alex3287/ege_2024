@@ -1,14 +1,13 @@
 # +1 *2  129   1<=s<=128
 # задача 19
-# def F(s, pos):
-#     if s >= 129 and pos == 3: return True
-#     if s < 129 and pos == 3: return False
-#     if s >= 129: return False
-#
-#     if pos % 2 == 1:
-#         return F(s+1, pos+1) and F(s*2, pos+1)
-#     return F(s+1, pos+1) or F(s*2, pos+1)
+def F(s, pos):
+    if s >= 129 and pos == 3: return True
+    if s < 129 and pos == 3: return False
+    if s >= 129: return False
 
+    if pos % 2 == 1:
+        return F(s+1, pos+1) and F(s*2, pos+1)
+    return F(s+1, pos+1) or F(s*2, pos+1)
 
 # задача 20
 # def F(s, pos):
