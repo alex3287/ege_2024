@@ -9,3 +9,4 @@ print(f'{80:b}')
 # 11110000
 # 01010000
 print(int('11110000', 2))
+import functools
